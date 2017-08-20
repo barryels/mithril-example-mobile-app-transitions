@@ -73,8 +73,49 @@ body {
 
 }
 
-.mainSection {
+.appSection {
+	padding: 20px;
+	transform: translate3d();
+}
 
+.appSection--forward {
+	animation: appSection-out-and-in-forward 1s;
+}
+
+.appSection--backward {
+	animation: appSection-out-and-in-backward 1s;
+}
+
+
+@keyframes appSection-out-and-in-forward {
+	0% {
+        transform: translateX(0);
+	}
+	50% {
+        transform: translateX(-320px);
+	}
+	51% {
+        transform: translateX(320px);
+    }
+    100% {
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes appSection-out-and-in-backward {
+	0% {
+        transform: translateX(0);
+	}
+	50% {
+        transform: translateX(320px);
+	}
+	51% {
+        transform: translateX(-320px);
+    }
+    100% {
+		transform: translateX(0);
+	}
 }
 
 
