@@ -47,8 +47,37 @@ table {
 	border-spacing: 0;
 }
 
+/* App-specific */
 
 body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
+}
+
+.appBar {
+
+}
+
+.appBar ul li {
+	display: inline-block;
+	width: 33%;
+}
+.appBar ul li a {
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+.layout {
+
+}
+
+.mainSection {
+
+}
+
+
+.screenContent {
+	background: #ccc;
 }
