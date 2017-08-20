@@ -29,7 +29,6 @@ function setupRoutes() {
 
 
 function onRouteChange() {
-	// console.log('onRouteChange', window.location.hash, e);
 	actions.updateCurrentRoutePath(window.location.hash, 'some other thing');
 }
 
@@ -38,8 +37,6 @@ function init() {
 	setupRoutes();
 
 	window.addEventListener('hashchange', onRouteChange, false);
-	// window.addEventListener('pushstate', onRouteChange);
-	// window.addEventListener('popstate', onRouteChange);
 	onRouteChange(null);
 }
 
